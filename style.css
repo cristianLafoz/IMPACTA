@@ -5,12 +5,17 @@
     --azul: #001c3a;
 }
 
+.texto-rojo{
+  color:var(--rojo)
+}
+
+
 
 /* Encabezado */
 .encabezado{
     background-color: var(--rojo);
     color: white;
-    height: 1.5rem;
+    height: 2rem;
     font-size: 12px;
 }
 
@@ -22,6 +27,23 @@
     color: white;
 }
 
+
+/* Navegacion */
+.menu_nav{
+  padding: 10px;
+}
+
+.icono-nav{
+  width: 50px;
+  color: var(--rojo);
+  margin: -10px;
+}
+
+
+
+.main{
+  background-color: #e2001a;
+}
 
 
 
@@ -38,4 +60,19 @@
     .encabezado p {
         margin: 5px 0; 
     }
+}
+
+@media screen and (max-width: 767px){
+  .enlaces-nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconos-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
