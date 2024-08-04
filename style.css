@@ -1,0 +1,41 @@
+/* Variables generales */
+/* Colores */
+:root{
+    --rojo: #e2001a;
+    --azul: #001c3a;
+}
+
+
+/* Encabezado */
+.encabezado{
+    background-color: var(--rojo);
+    color: white;
+    height: 1.5rem;
+    font-size: 12px;
+}
+
+.encabezado p{
+    margin: 5px;
+}
+
+.encabezado a{
+    color: white;
+}
+
+
+
+
+
+/* Media Querys */
+@media screen and (max-width: 440px) {
+    .encabezado {
+        flex-direction: column; 
+        height: auto; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .encabezado p {
+        margin: 5px 0; 
+    }
+}
