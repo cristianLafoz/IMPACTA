@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 32">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke: #d6d6d8;
+      }
+
+      .cls-4 {
+        fill: #3569b2;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="48" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <rect class="cls-4" x=".5" y=".5" width="47" height="31"/>
+      <path class="cls-5" d="M40.23,20.72l2.23,2.31v-4.59l-2.23,2.28h0ZM39.24,24.74h2.61l-3.68-4.02,3.68-3.99h-2.57l-2.38,2.6-2.36-2.6h-2.62l3.67,4.02-3.67,3.99h2.54l2.39-2.61,2.38,2.61h0ZM25.35,16.74v8h6.57v-1.74h-4.57v-1.4h4.48v-1.73h-4.48v-1.4h4.57v-1.74h-6.57ZM26.69,9.98l.4-1.01.4,1.01.82,2.03h-2.42l.82-2.03ZM29.61,15.29h2.32l-3.47-8.03h-2.69l-3.49,8.03h2.29l.61-1.55h3.82l.61,1.55ZM33.93,10.07v-1.05s.38,1.05.38,1.05l1.92,5.23h1.91l1.93-5.23.37-1.04v6.27h2.01V7.27h-3.34l-1.52,4.08-.4,1.1-.41-1.1-1.52-4.08h-3.34v8.03h2.01v-5.23h0ZM37.19,8.33l.95-2.62h4.32v20.59h-4.08l-1.51-1.8-1.57,1.8h-11.58v-9.57h-3.82l4.78-11.02h4.65l1.12,2.5v-2.5h5.77l.96,2.62h0Z"/>
+      <g class="cls-1">
+        <rect class="cls-3" x=".5" y=".5" width="47" height="31"/>
+      </g>
+    </g>
+  </g>
+</svg>

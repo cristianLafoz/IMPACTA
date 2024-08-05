@@ -9,6 +9,13 @@
   color:var(--rojo)
 }
 
+hr {
+  position: relative;
+  height: 5px;
+  width: 100%;
+  color: white;
+  margin: 100px 0;
+}
 
 
 /* Encabezado */
@@ -34,14 +41,23 @@
 }
 
 .icono-nav{
-  width: 30px;
+  width: 40px;
   color: var(--rojo);
   display: flex;
   justify-content: center;
+  font-size: larger;
+}
+
+.navbar-nav{
+  margin-right: 120px;
 }
 
 .main{
   background-color: #e2001a;
+}
+
+.logo-impacta{
+  margin-left: 35px;
 }
 
 
@@ -105,7 +121,7 @@
 .icono{
   margin-top: 20px;
   color: var(--rojo);
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-bottom: 70px;
 }
 
@@ -116,6 +132,7 @@
 
 /* Imagenes cuadrícula */
 .card{
+  position: relative;
   border: None;
   max-height: 597px;
   max-width: 550px;
@@ -146,6 +163,11 @@
 .imagen-tarjeta{
   position: relative; 
   overflow: hidden; 
+  max-height: 350px;
+}
+
+.imagen-tarjeta img{
+  background-size: cover;
 }
 
 .card img{
@@ -156,10 +178,10 @@
 
 .card .top-image {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 0;
   width: 100%;
-  height: 55%;
+  height: 65%;
   opacity: 1;  
   filter: invert(97%) sepia(14%) saturate(1%) hue-rotate(174deg) brightness(102%) contrast(101%);
 }
@@ -168,7 +190,7 @@
 .circle-container {
   position: relative;
   bottom: 50px;
-  left: -18px;
+  left: -21px;
 }
 
 .circle {
@@ -189,6 +211,92 @@
   margin: 50px 50px;
   max-height: 550px;
 }
+
+.imagenes-cuadricula{
+  margin-bottom: 50px;
+}
+
+.fila{
+  margin-bottom: 150px;
+}
+
+/* Sección "vendemos humo con mucha pasión" */
+.vendemos-humo{
+  position: relative;
+  background-color: var(--azul);
+  height: 350px;
+}
+
+.vendemos-humo img{
+  border-radius: 1%;
+}
+
+.vendemos-humo h2{
+  position: absolute;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 2.45rem;
+  top: 65%;
+  text-align: center;
+}
+
+
+/* Nuestros clientes  */
+.nuestros-clientes{
+  position: absolute;
+  background: linear-gradient(to top, rgb(212, 0, 0), rgba(255, 120, 120, 0.493));
+  height: 100vh; 
+  width: 100%; 
+  z-index: -1;
+ 
+}
+
+.nuestros-clientes-div{
+  margin-top: 250px;
+}
+
+
+.nuestros-clientes-titulo{
+  margin-bottom: 50px;
+  color: white;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  width: 100%;
+  margin: 0 30px; 
+}
+
+.malla .item-large {
+  grid-column: span 2; 
+}
+
+.logo{
+  background-color: rgba(255, 0, 0, 0.9);
+  padding: 10px;
+  text-align: center;
+  min-width: 250px;
+  width: 100%; 
+  height: 185px; 
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+/* FROMULARIO */
+/* background-color:  rgba(219,31,31,255); poner este color cuando vayamos a hacer el media query */
+
+.formulario{
+  position: relative;
+  background-color:  rgb(212, 0, 0);
+}
+
 
 /* Media Querys */
 @media screen and (max-width: 440px) {
@@ -215,6 +323,56 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .navbar-nav{
+    margin-right: 0;
+  }
+
+  .icono{
+    font-size: 5vw;
+  }
+
+}
+
+@media screen and (max-width: 1720px){
+  .malla{
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .nuestros-clientes{
+    height: auto;
+  }
+
+  .logo{
+    min-width: 350px;
+  }
+
+  .malla .item-large {
+    grid-column: span 1; 
+  }
+
+}
+
+@media screen and (max-width: 950px){
+  .malla{
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .nuestros-clientes{
+    height: auto;
+  }
+
+  .logo{
+    min-width: 350px;
+  }
+
+  .malla .item-large {
+    grid-column: span 1; 
   }
 
 }

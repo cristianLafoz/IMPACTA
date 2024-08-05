@@ -22,11 +22,11 @@
     </div>
 
     <!-- Menú de navegacion -->
-    <nav class="navbar navbar-expand-md menu_nav">
+    <nav class="navbar navbar-expand-md menu_nav d-flex">
         <div class="container-fluid">
           <!-- Logotipo del NAV -->
             <a class="navbar-brand" href="#">
-                <img src="assets/img/LogoImpacta.svg" width="130" height="50" alt="Logo de IMPACTA">
+                <img src="assets/img/LogoImpacta.svg" class="logo-impacta" width="160" height="50" alt="Logo de IMPACTA">
             </a>
             <!-- Botón para dispositivos móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,90 +85,126 @@
             </div>
         </div>
     </section>
+
     <!-- Simbolo de raton -->
     <section class="icono">
         <i class="bi bi-mouse d-flex flex-row justify-content-center"></i>
         <i class="bi bi-arrow-down d-flex flex-row justify-content-center"></i>
     </section>
-    <!-- Grid fotos cuadrícula -->
-    <main>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-4 col-sm-11 d-flex justify-content-around align-items-center columna-imagen">
-                <div class="card">
-                    <div class="imagen-tarjeta">
-                        <img src="assets/img/Cerebro.jpg" alt="Imagen de un cerebro tecnologico representando la creatividad">
-                        <img class="top-image" src="assets/img/salud-mental.svg" alt="Imagen de un cerebro tecnologico representando la creatividad">
-                    </div>
-                    <div class="card-body">
-                        <div class="circle-container">
-                            <div class="circle">1</div>
+
+    <!-- Sección principal de la aplicación web -->
+    <main class="d-block">
+        <!-- Grid fotos cuadrícula -->
+        <section class="imagenes-cuadricula">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 col-sm-9 d-flex justify-content-center flex-column align-items-center columna-imagen">
+                    <div class="card">
+                        <div class="imagen-tarjeta">
+                            <img src="assets/img/Cerebro.jpg" alt="Imagen de un cerebro tecnologico representando la creatividad">
+                            <img class="top-image" src="assets/img/svg/salud-mental.svg" alt="Imagen de un cerebro tecnologico representando la creatividad">
                         </div>
-                            <h2 class="card-title">CREATIVIDAD SIN LÍMITES<br> PARA IMPULSAR TU MARCA</h2>
-                        <p class="card-text">Transformamos ideas en <b>experiencias inolvidables,</b> creando campañas
-                        que capturan la esencia de tu marca y resuenan profundamente con tu
-                        audiencia.</p>
+                        <div class="card-body">
+                            <div class="circle-container">
+                                <div class="circle">1</div>
+                            </div>
+                                <h2 class="card-title">CREATIVIDAD SIN LÍMITES<br> PARA IMPULSAR TU MARCA</h2>
+                            <p class="card-text">Transformamos ideas en <b>experiencias inolvidables,</b> creando campañas
+                            que capturan la esencia de tu marca y resuenan profundamente con tu
+                            audiencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-9 d-flex justify-content-center flex-column align-items-center columna-imagen">
+                    <div class="card">
+                        <div class="imagen-tarjeta">
+                            <img src="assets/img/Diana.jpg" alt="Imagen de una diana">
+                            <img class="top-image" src="assets/img/svg/esperma.svg" alt="Imagen de unos espermatozoides dando en la diana">
+                        </div>
+                        <div class="card-body">
+                            <div class="circle-container">
+                                <div class="circle">2</div>
+                            </div>
+                                <h2 class="card-title">AGILIDAD Y EFICIENCIA<br>EN CADA PROYECTO</h2>
+                            <p class="card-text"><b>Respuesta rápida y eficiente</b> para un mercado en constante cambio,<br>
+                                adaptándonos a tus necesidades y superando tus expectativas con cada
+                                <br>entrega.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-11 d-flex justify-content-center flex-column align-items-center columna-imagen">
-                <div class="card">
-                    <div class="imagen-tarjeta">
-                        <img src="assets/img/Diana.jpg" alt="Imagen de una diana">
-                        <img class="top-image" src="assets/img/esperma.svg" alt="Imagen de unos espermatozoides dando en la diana">
-                    </div>
-                    <div class="card-body">
-                        <div class="circle-container">
-                            <div class="circle">2</div>
+            <div class="row d-flex justify-content-center fila">
+                <div class="col-md-4 col-sm-9 d-flex justify-content-center flex-column align-items-center columna-imagen">
+                    <div class="card">
+                        <div class="imagen-tarjeta">
+                            <img src="assets/img/Mujer_gafas.jpg" alt="Imagen de una mujer con gafas de realidad virtual">
+                            <img class="top-image" src="assets/img/svg/chincheta.svg" alt="Imagen de una chincheta">
                         </div>
-                            <h2 class="card-title">AGILIDAD Y EFICIENCIA<br>EN CADA PROYECTO</h2>
-                        <p class="card-text"><b>Respuesta rápida y eficiente</b> para un mercado en constante cambio,<br>
-                            adaptándonos a tus necesidades y superando tus expectativas con cada
-                            <br>entrega.</p>
+                        <div class="card-body">
+                            <div class="circle-container">
+                                <div class="circle">3</div>
+                            </div>
+                                <h2 class="card-title">TECNOLOGÍA PARA <br>RESULTADOS ÓPTIMOS</h2>
+                            <p class="card-text">Innovación tecnológica para potenciar tus campañas publicitarias,<br>
+                            utilizando <b>las herramientas más avanzadas</b> para alcanzar y superar tus<br>
+                            objetivos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-9 d-flex justify-content-center flex-column align-items-center columna-imagen">
+                    <div class="card">
+                        <div class="imagen-tarjeta">
+                            <img src="assets/img/Apreton_Manos.jpg" alt="Imagen de un apreton de manos">
+                            <img class="top-image" src="assets/img/svg/jarro-de-cerveza.svg" alt="Imagen de una jarra de cerveza">
+                        </div>
+                        <div class="card-body">
+                            <div class="circle-container">
+                                <div class="circle">4</div>
+                            </div>
+                                <h2 class="card-title">EQUIPO DE EXPERTOS<br>APASIONADOS<br>Y DEDICADOS</h2>
+                            <p class="card-text">Profesionales apasionados dedicados a impulsar tu marca, combinando<br>
+                                talento y experiencia para ofrecer <b>resultados excepcionales y transformar tu visión en realidad.</b></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-4 col-sm-11 d-flex justify-content-around align-items-center columna-imagen">
-                <div class="card">
-                    <div class="imagen-tarjeta">
-                        <img src="assets/img/Mujer_gafas.jpg" alt="Imagen de una mujer con gafas de realidad virtual">
-                        <img class="top-image" src="assets/img/chincheta.svg" alt="Imagen de una chincheta">
-                    </div>
-                    <div class="card-body">
-                        <div class="circle-container">
-                            <div class="circle">3</div>
-                        </div>
-                            <h2 class="card-title">TECNOLOGÍA PARA <br>RESULTADOS ÓPTIMOS</h2>
-                        <p class="card-text">Innovación tecnológica para potenciar tus campañas publicitarias,<br>
-                        utilizando <b>las herramientas más avanzadas</b> para alcanzar y superar tus<br>
-                        objetivos.</p>
+         </section> <!--Fin de la cuadrícula de imagenes -->
+         <!-- Sección "vendemos humo con mucha pasión" -->
+         <section>
+            <div class="container-fluid vendemos-humo d-flex flex-column justify-content-center align-items-center">
+                <img src="assets/img/Humos.png" alt="Hombre realizando cocteles con humos de colores." height="575px">
+                <h2 class="col-12">VENDEMOS HUMO CON MUCHA PASIÓN</h2>
+            </div>
+         </section>
+        </main>
+        <!-- Seccion nuestros clientes -->
+        <section class="nuestros-clientes">
+            <div class="nuestros-clientes-div">
+                <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="nuestros-clientes-titulo">¿NUESTROS CLIENTES?</h2>
+                </div>
+                <div class="container-fluid d-flex justify-content-between mb-3">
+                    <div class="malla">
+                        <div class="logo"><img src="assets/img/svg/Alcampo.svg" alt="Logotipo Alcampo" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/Bas-F.svg" alt="Logotipo BASF" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/ferrovial.svg" alt="Logotipo Ferrovial" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/KPMG.svg" alt="Logotipo KPMG" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/Corporate Excellence.svg" alt="Logotipo Corporate Excellence" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/BMI.svg" alt="Logotipo BMI" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/Brita.svg" alt="Logotipo Brita" height="45" width="100"></div>
+                        <div class="logo item-large"><img src="assets/img/svg/cajamar.svg" alt="Logotipo Cajamar" height="45" width="100"></div>
+                        <div class="logo item-large"><img src="assets/img/svg/cepsa.svg" alt="Logotipo Cepsa" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/Schneider.svg" alt="Logotipo Schneider Electric" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/hill+knowlton.svg" alt="Logotipo Hill Knowlton Strategies" height="45" width="100"></div>
+                        <div class="logo"><img src="assets/img/svg/broseta.svg" alt="Logotipo Broseta" height="45" width="100"></div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-11 d-flex justify-content-center flex-column align-items-center columna-imagen">
-                <div class="card">
-                    <div class="imagen-tarjeta">
-                        <img src="assets/img/Apreton_Manos.jpg" alt="Imagen de un apreton de manos">
-                        <img class="top-image" src="assets/img/jarro-de-cerveza.svg" alt="Imagen de una jarra de cerveza">
-                    </div>
-                    <div class="card-body">
-                        <div class="circle-container">
-                            <div class="circle">4</div>
-                        </div>
-                            <h2 class="card-title">EQUIPO DE EXPERTOS<br>APASIONADOS<br>Y DEDICADOS</h2>
-                        <p class="card-text">Profesionales apasionados dedicados a impulsar tu marca, combinando<br>
-                            talento y experiencia para ofrecer <b>resultados excepcionales y transformar<br>
-                            tu visión en realidad.</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
+            <hr>
+            <form class="formulario">
+            </form>
+        </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
