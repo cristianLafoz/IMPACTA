@@ -1,4 +1,45 @@
 /* Variables generales */
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  width: 100%;
+  position: absolute;
+}
+
+a{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Outfit-500';
+  src: url(assets/fonts/Outfit-500.ttf);
+  font-family: 'Outfit-700';
+  src: url(assets/fonts/Outfit-700.ttf);
+  font-family: 'Outfit-Black';
+  src: url(assets/fonts/Outfit-Black.ttf);
+  font-family: 'Outfit-Bold';
+  src: url(assets/fonts/Outfit-Bold.ttf);
+  font-family: 'Outfit-ExtraBold';
+  src: url(assets/fonts/Outfit-ExtraBold.ttf);
+  font-family: 'Outfit-ExtraLight';
+  src: url(assets/fonts/Outfit-ExtraLight.ttf);
+  font-family: 'Outfit-Light';
+  src: url(assets/fonts/Outfit-Light.ttf);
+  font-family: 'Outfit-Medium';
+  src: url(assets/fonts/Outfit-Medium.ttf);
+  font-family: 'Outfit-Regular';
+  src: url(assets/fonts/Outfit-Regular.ttf);
+  font-family: 'Outfit-SemiBold';
+  src: url(assets/fonts/Outfit-SemiBold.ttf);
+  font-family: 'Outfit-Thin';
+  src: url(assets/fonts/Outfit-Thin.ttf);
+  font-family: 'Outfit-VariableFont';
+  src: url(assets/fonts/Outfit-VariableFont_wght.ttf);
+}
+
 /* Colores */
 :root{
     --rojo: #e2001a;
@@ -9,13 +50,11 @@
   color:var(--rojo)
 }
 
-hr {
-  position: relative;
-  height: 5px;
-  width: 100%;
+.texto-blanco{
   color: white;
-  margin: 100px 0;
 }
+
+
 
 
 /* Encabezado */
@@ -121,8 +160,8 @@ hr {
 .icono{
   margin-top: 20px;
   color: var(--rojo);
-  font-size: 2vw;
-  margin-bottom: 70px;
+  font-size: 1.25vw;
+  margin-bottom: 200px;
 }
 
 .icono .bi-arrow-down{
@@ -134,8 +173,7 @@ hr {
 .card{
   position: relative;
   border: None;
-  max-height: 597px;
-  max-width: 550px;
+  max-height: 511px;
 }
 
 .card::before {
@@ -144,36 +182,29 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(255, 0, 0, 0.507); 
+  height: 80%;
+  background: #b92e32;
   mix-blend-mode: color; 
   z-index: 1; 
 }
 
-.card .card-title{
-  color: var(--azul);
-  margin-bottom: 15px;
-}
-
-.card .card-text{
-  color: var(--azul);
-  
-}
 
 .imagen-tarjeta{
   position: relative; 
   overflow: hidden; 
-  max-height: 350px;
+  min-height: 350px;
 }
 
-.imagen-tarjeta img{
+.imagen-tarjeta img:first-child{
   background-size: cover;
+  object-fit: cover;
 }
 
 .card img{
-  border-radius: 2%;
+  border-radius: 1.5%;
   width: 100%;
-  height: 100%;
+  max-height: 550px;
+  margin: 0 auto;
 }
 
 .card .top-image {
@@ -186,17 +217,26 @@ hr {
   filter: invert(97%) sepia(14%) saturate(1%) hue-rotate(174deg) brightness(102%) contrast(101%);
 }
 
+.card .card-title{
+  color: var(--azul);
+  margin-bottom: 15px;
+}
+
+.card .card-text{
+  color: var(--azul);
+  
+}
 
 .circle-container {
   position: relative;
-  bottom: 50px;
-  left: -21px;
+  bottom: 40px;
+  left: -5px;
 }
 
 .circle {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: white;
   color: var(--rojo);
@@ -208,8 +248,10 @@ hr {
 }
 
 .columna-imagen{
-  margin: 50px 50px;
-  max-height: 550px;
+  margin: 0;
+  height: 100%;
+  width: 700px;
+  margin:55px;
 }
 
 .imagenes-cuadricula{
@@ -225,10 +267,12 @@ hr {
   position: relative;
   background-color: var(--azul);
   height: 350px;
+  margin-top: 260px;
 }
 
 .vendemos-humo img{
   border-radius: 1%;
+  margin-top: 50px;
 }
 
 .vendemos-humo h2{
@@ -243,16 +287,19 @@ hr {
 
 /* Nuestros clientes  */
 .nuestros-clientes{
-  position: absolute;
-  background: linear-gradient(to top, rgb(212, 0, 0), rgba(255, 120, 120, 0.493));
-  height: 100vh; 
+  position: relative;
+  padding-top: 10px;
+  background: linear-gradient(to top,rgba(255,0,0,1) 0%, rgba(255,0,0,0.9248074229691877) 44%, rgba(255,0,0,0.8435749299719888) 77%, rgba(232,124,124,1) 88%, rgba(235,149,149,1) 97%);
+  height: 100%; 
   width: 100%; 
   z-index: -1;
+  
  
 }
 
 .nuestros-clientes-div{
-  margin-top: 250px;
+  margin-top: 450px;
+  padding-bottom: 45px;
 }
 
 
@@ -275,12 +322,12 @@ hr {
 }
 
 .logo{
-  background-color: rgba(255, 0, 0, 0.9);
+  background-color: #e42323;
   padding: 10px;
   text-align: center;
   min-width: 250px;
   width: 100%; 
-  height: 185px; 
+  height: 215px; 
   border-radius: 2%;
   display: flex;
   align-items: center;
@@ -290,89 +337,449 @@ hr {
 
 
 /* FROMULARIO */
-/* background-color:  rgba(219,31,31,255); poner este color cuando vayamos a hacer el media query */
-
 .formulario{
+  background-color: var(--rojo);
   position: relative;
-  background-color:  rgb(212, 0, 0);
+  padding-bottom: 120px;
+  margin-top: 1px;
 }
+
+::placeholder {
+  color: var(--rojo);
+  font-size: 0.9em;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+
+/* Formulario parte izquierda*/
+
+.form-1 h2{
+  color: white;
+  padding: 0 0 15px 0;
+}
+
+.form-1 p{
+  margin-top: 5px;
+  color: white;
+  font-size: 0.8vw;
+  width: 100%;
+}
+
+.formulario input[type = "text"],
+.formulario input[type = "email"],
+.formulario input[type = "tel"],
+.formulario input[type = "textarea"]{
+  border-radius: 8px;
+  width: calc(50% - 8px);
+  border: none;
+  height: 40px;
+
+}
+
+.formulario textarea{
+  width: calc(100% - 10px);
+  height: 200px;
+  border-radius: 8px;
+  resize: none;
+}
+
+
+/* Formulario parte derecha */
+
+.form-2{
+  margin-top: 105px;
+  margin-left: 50px;
+  color: white;
+ 
+}
+
+.form-2 h2{
+  margin-bottom: 25px;
+  text-align: start;
+  font-size: 20px;
+  color: white;
+}
+
+.form-2 div{
+  display: flex;
+  margin-top: 25px;
+  position: relative;
+  padding-left: 50px; 
+}
+
+.form-2 label{
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 100%;
+  padding: 6px;
+  margin-left: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.formulario input[type=radio] { 
+ display: none;
+}
+
+.form-2 label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -75px; 
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.form-2 input[type="radio"]:checked + label::before {
+  content: "";
+  background-color:white;
+  top: 50%;
+  left: -75px;
+  height: 42px;
+  width: 42px;
+  align-items: center;
+  padding: 1px;
+  border: 2px solid black;
+}
+
+/* Formulario politica legal y boton enviar */
+
+.boton-enviar {
+  justify-content: end;
+  align-items: end;
+  background-color: yellow;
+  color: #d40000;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.politica-legal{
+  top: 0;
+  left: -100px;
+  margin-top: 130px;
+  padding: 0;
+
+}
+
+.politica-legal label{
+  font-size: 15px;
+  margin-left: 48px;
+  border: none;
+}
+
+.formulario input[type=checkbox] { 
+  display: none;
+ }
+
+.politica-legal label::before{
+  content: "";
+  top: 30px;
+  left: -55px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.politica-legal input[type=checkbox]:checked + label::before{
+  content: "";
+  background-color: var(--azul);
+  top: 30px;
+  left: -55px;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  padding: 1px;
+  border: 2px solid black;
+}
+
+
+/* Footer */
+
+.letters-footer{
+  color: var(--rojo);
+  padding: 5px 0 0 5px;
+  margin: 0;
+}
+
+.letters-footer a{
+  color: var(--rojo);
+}
+
+.letters-footer p{
+  margin: 0;
+  padding: 7px 0;
+}
+
+footer{
+  background-color: var(--azul);
+  height: auto;
+  width: 100%;
+}
+
+.footer-seccion{
+  margin: 60px 0px 10px 0px;
+}
+
+footer h4{
+  color: var(--rojo);
+  display: block;
+  margin-bottom: 35px;
+}
+
+footer p{
+  color: white;
+}
+
+.imagenes-pago{
+  margin-top: -10px;
+}
+
+.imagenes-pago img{
+  padding: 0 5px;
+}
+
+.servicios{
+  margin-top: 105px;
+}
+
+.redes{
+  margin-top: 160px;
+}
+
+.footer-redes-iconos img:last-child{
+  margin-left: 15px;
+}
+
+.impacta{
+  font-size: 12px;
+}
+
+
+
+
+
+
 
 
 /* Media Querys */
-@media screen and (max-width: 440px) {
-    .encabezado {
-        flex-direction: column; 
-        height: auto; 
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .encabezado p {
-        margin: 5px 0; 
-    }
-}
-
-@media screen and (max-width: 767px){
-  .enlaces-nav{
+@media screen and (max-width: 425px){
+  .enlaces-nav div{
     display: flex;
-    flex-direction: column;
-  }
-
-  .iconos-nav{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  .navbar-nav{
-    margin-right: 0;
+  .enlaces-nav div ul{
+    margin: 0;
+  }
+
+
+  .vendemos-humo{
+    margin-top: 130px;
+  }
+
+  .nuestros-clientes-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+
+  .icono{
+    margin-top: 20px;
+    color: var(--rojo);
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  
+  .icono .bi-arrow-down{
+    margin-top: 15px;
+  }
+
+  .imagen-tarjeta{
+    min-height: auto;
+  }
+
+  .malla{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    align-items: center;
+  }
+
+
+  .malla .item-large {
+    grid-column: span 1; 
+  }
+
+  .vendemos-humo img{
+    height: auto;
+    width: 20rem;
+  }
+
+  .malla .logo{
+    min-width: 300px;
+    height: auto;
+  }
+
+  .form-1{
+    width: 90%;
+  }
+
+  .form-1 p {
+    font-size: 4vw;
+  }
+
+  .form-2{
+    width: 90%;
+    margin: 0;
+  }
+
+  footer{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .enlaces-nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enlaces-nav div ul{
+    margin: 0;
+  }
+
+
+  .vendemos-humo{
+    margin-top: 130px;
+  }
+
+  .nuestros-clientes-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
   }
 
   .icono{
+    margin-top: 20px;
+    color: var(--rojo);
     font-size: 5vw;
+    margin-bottom: 20px;
+  }
+  
+  .icono .bi-arrow-down{
+    margin-top: 15px;
   }
 
-}
+  .imagen-tarjeta{
+    min-height: auto;
+  }
 
-@media screen and (max-width: 1720px){
   .malla{
     grid-template-columns: repeat(2, 1fr);
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
-  }
-  .nuestros-clientes{
-    height: auto;
+    align-items: center;
   }
 
-  .logo{
-    min-width: 350px;
-  }
 
   .malla .item-large {
     grid-column: span 1; 
   }
 
+  .vendemos-humo img{
+    height: auto;
+    width: 20rem;
+  }
+
+  .malla .logo{
+    min-width: 300px;
+    height: auto;
+  }
+
+  .form-1{
+    width: 90%;
+  }
+
+  .form-1 p {
+    font-size: 2vw;
+  }
+
+  .form-2{
+    width: 90%;
+    margin: 0;
+  }
+
+  footer{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  
 }
 
-@media screen and (max-width: 950px){
-  .malla{
-    grid-template-columns: repeat(1, 1fr);
-    width: 70%;
-    margin: 0 auto;
-    height: auto;
-  }
-  .nuestros-clientes{
-    height: auto;
-  }
-
-  .logo{
-    min-width: 350px;
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .malla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    margin: 0 30px; 
   }
 
-  .malla .item-large {
-    grid-column: span 1; 
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
   }
+
+  .form-1 p{
+    font-size: 1vw;
+  }
+
 
 }
