@@ -9,10 +9,6 @@ body{
   position: absolute;
 }
 
-a{
-  text-decoration: none;
-}
-
 @font-face {
   font-family: 'Outfit-500';
   src: url(assets/fonts/Outfit-500.ttf);
@@ -38,6 +34,8 @@ a{
   src: url(assets/fonts/Outfit-Thin.ttf);
   font-family: 'Outfit-VariableFont';
   src: url(assets/fonts/Outfit-VariableFont_wght.ttf);
+  font-family: 'CoreSansC';
+  src: url(assets/fonts/CoreSansC-75ExtraBold.ttf);
 }
 
 /* Colores */
@@ -59,14 +57,16 @@ a{
 
 /* Encabezado */
 .encabezado{
-    background-color: var(--rojo);
-    color: white;
-    height: 2rem;
-    font-size: 12px;
+  font-family: "Outfit-VariableFont";
+  background-color: var(--rojo);
+  color: white;
+  height: 2rem;
+  font-size: 12px;
 }
 
 .encabezado p{
     margin: 5px;
+    font-size: 0.75rem;
 }
 
 .encabezado a{
@@ -77,6 +77,7 @@ a{
 /* Navegacion */
 .menu_nav{
   padding: 10px;
+  font-size: medium;
 }
 
 .icono-nav{
@@ -147,12 +148,16 @@ a{
 
 .carousel-caption p {
   position: relative;
-  font-size: 10vw;
+  font-size: 8vw;
   font-weight: bold;
-  font-family: "Outfit Thin";
-  line-height: 0.8;
+  line-height: 0.9;
   margin-left: 20px;
   text-align: left;
+  
+}
+
+.carousel-caption span{
+  font-family: 'CoreSansC';
 }
 
 
@@ -176,16 +181,20 @@ a{
   max-height: 511px;
 }
 
-.card::before {
+.imagen-tarjeta::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  min-height: 100%;
   background: #b92e32;
   mix-blend-mode: color; 
   z-index: 1; 
+}
+
+.card-title{
+  font-size: xx-large;
 }
 
 
@@ -224,7 +233,10 @@ a{
 
 .card .card-text{
   color: var(--azul);
-  
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+ 
 }
 
 .circle-container {
@@ -272,14 +284,15 @@ a{
 
 .vendemos-humo img{
   border-radius: 1%;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .vendemos-humo h2{
   position: absolute;
   color: white;
-  letter-spacing: 5px;
+  letter-spacing: 12px;
   font-size: 2.45rem;
+  font-weight: bolder;
   top: 65%;
   text-align: center;
 }
@@ -306,6 +319,8 @@ a{
 .nuestros-clientes-titulo{
   margin-bottom: 50px;
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .malla {
@@ -346,11 +361,10 @@ a{
 
 ::placeholder {
   color: var(--rojo);
-  font-size: 0.9em;
+  font-size: 0.75rem;
   margin-left: 25px;
-  font-weight: bold;
+  font-weight: bolder;
 }
-
 
 /* Formulario parte izquierda*/
 
@@ -362,7 +376,7 @@ a{
 .form-1 p{
   margin-top: 5px;
   color: white;
-  font-size: 0.8vw;
+  font-size: 1vw;
   width: 100%;
 }
 
@@ -584,10 +598,13 @@ footer p{
     align-items: center;
   }
 
+  .card .card-text{
+    font-size: 1rem;
+  }
+
   .enlaces-nav div ul{
     margin: 0;
   }
-
 
   .vendemos-humo{
     margin-top: 130px;
@@ -624,19 +641,26 @@ footer p{
     align-items: center;
   }
 
-
   .malla .item-large {
     grid-column: span 1; 
-  }
-
-  .vendemos-humo img{
-    height: auto;
-    width: 20rem;
   }
 
   .malla .logo{
     min-width: 300px;
     height: auto;
+  }
+
+  .vendemos-humo img{
+    height: auto;
+    width: 20rem;
+    margin-top: 50px;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
   }
 
   .form-1{
@@ -645,6 +669,10 @@ footer p{
 
   .form-1 p {
     font-size: 4vw;
+  }
+
+  .form-1 ::placeholder{
+    font-size: 3vw;
   }
 
   .form-2{
@@ -657,12 +685,7 @@ footer p{
     margin: 0 auto;
   }
 
-  .formulario{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: nowrap;
-  }
+
 }
 
 
