@@ -1,4 +1,4 @@
-/* Variables generales */
+/* -----------------------Variables generales-------------------------------*/
 *{
   margin:0;
   padding:0;
@@ -9,39 +9,9 @@ body{
   position: absolute;
 }
 
-@font-face {
-  font-family: 'Outfit-500';
-  src: url(assets/fonts/Outfit-500.ttf);
-  font-family: 'Outfit-700';
-  src: url(assets/fonts/Outfit-700.ttf);
-  font-family: 'Outfit-Black';
-  src: url(assets/fonts/Outfit-Black.ttf);
-  font-family: 'Outfit-Bold';
-  src: url(assets/fonts/Outfit-Bold.ttf);
-  font-family: 'Outfit-ExtraBold';
-  src: url(assets/fonts/Outfit-ExtraBold.ttf);
-  font-family: 'Outfit-ExtraLight';
-  src: url(assets/fonts/Outfit-ExtraLight.ttf);
-  font-family: 'Outfit-Light';
-  src: url(assets/fonts/Outfit-Light.ttf);
-  font-family: 'Outfit-Medium';
-  src: url(assets/fonts/Outfit-Medium.ttf);
-  font-family: 'Outfit-Regular';
-  src: url(assets/fonts/Outfit-Regular.ttf);
-  font-family: 'Outfit-SemiBold';
-  src: url(assets/fonts/Outfit-SemiBold.ttf);
-  font-family: 'Outfit-Thin';
-  src: url(assets/fonts/Outfit-Thin.ttf);
-  font-family: 'Outfit-VariableFont';
-  src: url(assets/fonts/Outfit-VariableFont_wght.ttf);
-  font-family: 'CoreSansC';
-  src: url(assets/fonts/CoreSansC-75ExtraBold.ttf);
-}
-
-/* Colores */
 :root{
-    --rojo: #e2001a;
-    --azul: #001c3a;
+  --rojo: #e2001a;
+  --azul: #001c3a;
 }
 
 .texto-rojo{
@@ -54,8 +24,37 @@ body{
 
 
 
+@font-face {
+  font-family: 'Outfit-500';
+  src: url(../../../assets/fonts/Outfit-500.ttf);
+  font-family: 'Outfit-700';
+  src: url(../../../assets/fonts/Outfit-700.ttf);
+  font-family: 'Outfit-Black';
+  src: url(../../../assets/fonts/Outfit-Black.ttf);
+  font-family: 'Outfit-Bold';
+  src: url(../../../assets/fonts/Outfit-Bold.ttf);
+  font-family: 'Outfit-ExtraBold';
+  src: url(../../../assets/fonts/Outfit-ExtraBold.ttf);
+  font-family: 'Outfit-ExtraLight';
+  src: url(../../../assets/fonts/Outfit-ExtraLight.ttf);
+  font-family: 'Outfit-Light';
+  src: url(../../../assets/fonts/Outfit-Light.ttf);
+  font-family: 'Outfit-Medium';
+  src: url(../../../assets/fonts/Outfit-Medium.ttf);
+  font-family: 'Outfit-Regular';
+  src: url(../../../assets/fonts/Outfit-Regular.ttf);
+  font-family: 'Outfit-SemiBold';
+  src: url(../../../assets/fonts/Outfit-SemiBold.ttf);
+  font-family: 'Outfit-Thin';
+  src: url(../../../assets/fonts/Outfit-Thin.ttf);
+  font-family: 'Outfit-VariableFont';
+  src: url(../../../assets/fonts/Outfit-VariableFont_wght.ttf);
+  font-family: 'CoreSansC';
+  src: url(../../../assets/fonts/CoreSansC-75ExtraBold.ttf);
+}
 
-/* Encabezado */
+
+/* ---------------------------------Encabezado------------------------------------------ */
 .encabezado{
   font-family: "Outfit-VariableFont";
   background-color: var(--rojo);
@@ -74,10 +73,19 @@ body{
 }
 
 
-/* Navegacion */
+/* -----------------------------------Navegacion-------------------------------------------- */
 .menu_nav{
   padding: 10px;
   font-size: medium;
+}
+
+.logo-impacta{
+  margin-left: 35px;
+}
+
+.navbar-nav{
+  margin-right: 120px;
+  width: 100%;
 }
 
 .icono-nav{
@@ -88,20 +96,8 @@ body{
   font-size: larger;
 }
 
-.navbar-nav{
-  margin-right: 120px;
-}
 
-.main{
-  background-color: #e2001a;
-}
-
-.logo-impacta{
-  margin-left: 35px;
-}
-
-
-/* Carousel cabecera */
+/* ----------------------------------Carousel cabecera ----------------------------------------*/
 .carousel-indicators .boton-carousel {
   width: 12px; 
   height: 12px; 
@@ -125,15 +121,9 @@ body{
   top: 0;
   left: 0;
   height: 100%;
-  width: 40%; 
+  width: 35%; 
   background: linear-gradient(to right, var(--rojo), rgba(255, 0, 0, 0));
   z-index: 1;
-}
-
-
-.carousel-item img {
-  position: relative;
-  z-index: 0;
 }
 
 .carousel-caption {
@@ -143,7 +133,6 @@ body{
   z-index: 2;
   width: auto; 
   color: white;
-  
 }
 
 .carousel-caption p {
@@ -161,7 +150,12 @@ body{
 }
 
 
-/* Simbolo del raton */
+.carousel-item img {
+  position: relative;
+  z-index: 0;
+}
+
+/* ----------------------------------------Simbolo del raton----------------------------------------- */
 .icono{
   margin-top: 20px;
   color: var(--rojo);
@@ -174,7 +168,7 @@ body{
 }
 
 
-/* Imagenes cuadrícula */
+/* -----------------------------------------Imagenes cuadrícula---------------------------------------- */
 .card{
   position: relative;
   border: None;
@@ -274,7 +268,7 @@ body{
   margin-bottom: 150px;
 }
 
-/* Sección "vendemos humo con mucha pasión" */
+/* -------------------------------------------Sección "vendemos humo con mucha pasión" --------------------------------------------*/
 .vendemos-humo{
   position: relative;
   background-color: var(--azul);
@@ -298,7 +292,7 @@ body{
 }
 
 
-/* Nuestros clientes  */
+/*------------------------------------------------------ Nuestros clientes-------------------------------------------------------  */
 .nuestros-clientes{
   position: relative;
   padding-top: 10px;
@@ -351,7 +345,7 @@ body{
 }
 
 
-/* FROMULARIO */
+/* ----------------------------------------------------FORMULARIO ----------------------------------------------------*/
 .formulario{
   background-color: var(--rojo);
   position: relative;
@@ -366,7 +360,11 @@ body{
   font-weight: bolder;
 }
 
-/* Formulario parte izquierda*/
+/* --------------------------------------------------Formulario parte izquierda---------------------------------------*/
+.form-1,
+.form-2{
+  padding-bottom: 50px;
+}
 
 .form-1 h2{
   color: white;
@@ -399,7 +397,7 @@ body{
 }
 
 
-/* Formulario parte derecha */
+/* ---------------------------------------------------Formulario parte derecha ---------------------------------------*/
 
 .form-2{
   margin-top: 105px;
@@ -467,7 +465,7 @@ body{
   border: 2px solid black;
 }
 
-/* Formulario politica legal y boton enviar */
+/*---------------------------------------------- Formulario politica legal y boton enviar ------------------------------------------*/
 
 .boton-enviar {
   justify-content: end;
@@ -522,7 +520,7 @@ body{
 }
 
 
-/* Footer */
+/* --------------------------------------------------Footer-------------------------------------------------------- */
 
 .letters-footer{
   color: var(--rojo);
@@ -586,16 +584,24 @@ footer p{
 
 
 
+/* --------------------------------------------------Media Querys---------------------------------------------- */
 
-
-
-
-/* Media Querys */
+/*--------------------------------------------MEDIA QUERY - 0PX - 425PX ---------------------------------------------*/
 @media screen and (max-width: 425px){
+  .nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .enlaces-nav div{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .fondo_blanco{
+    display: none;
   }
 
   .card .card-text{
@@ -689,10 +695,7 @@ footer p{
 }
 
 
-
-
-
-
+/*--------------------------------------MEDIA QUERY 768PX - 1024PX-----------------------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
@@ -706,6 +709,16 @@ footer p{
     margin: 0;
   }
 
+  .fondo_blanco{
+    position: absolute;
+    width: 630px;
+    height: 75px;
+    background-color: white;
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    filter: blur(0.9rem);
+  }
 
   .vendemos-humo{
     margin-top: 130px;
@@ -783,6 +796,8 @@ footer p{
   
 }
 
+/*--------------------------------------------MEDIA QUERY 1024PX - 1440PX -----------------------------------------*/
+
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .malla {
     display: grid;
@@ -805,4 +820,20 @@ footer p{
   }
 
 
+}
+
+/*--------------------------------------------MEDIA QUERY 1024PX O SUPERIOR -----------------------------------------*/
+
+
+@media screen and (min-width: 1024px){
+  .fondo_blanco{
+    position: absolute;
+    width: 1200px;
+    height: 75px;
+    background-color: white;
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    filter: blur(0.9rem);
+  }
 }
